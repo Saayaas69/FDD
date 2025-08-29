@@ -1,40 +1,58 @@
-<!-- Navigation Bar -->
-<nav class="navbar" id="navbar">
-  <div class="nav-container">
-    <div class="nav-logo">
-      <div class="logo-icon"><img src="media/logo.png" alt="Sportify Logo"></div>
-      <span class="logo-text">SPORTIFY</span>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
 
-    <!-- Mobile Menu Toggle -->
-    <div class="mobile-menu-toggle" id="mobileMenuToggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Test</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+  </head>
 
-    <!-- Navigation Links -->
-    <ul class="nav-menu" id="navMenu">
-      <li><a href="index.html" class="nav-link active">Home</a></li>
-      <li><a href="sports.html" class="nav-link">Sports</a></li>
-      <li><a href="events.html" class="nav-link">Events</a></li>
-      <li><a href="teams.html" class="nav-link">Teams</a></li>
-      <li><a href="facilities.html" class="nav-link">Facilities</a></li>
-      <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-      <li><a href="about.html" class="nav-link">About Us</a></li>
-      <li><a href="contact.html" class="nav-link">Contact</a></li>
-      <li><a href="login.html" class="nav-link">Login</a></li>
-    </ul>
-  </div>
-</nav>
+  <body>
 
-<script>
-  // Toggle mobile menu
-  const mobileToggle = document.getElementById("mobileMenuToggle");
-  const navMenu = document.getElementById("navMenu");
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <div class="logo-icon"><img src="media/logo.png" alt="Sportify Logo"></div>
+          <span class="logo-text">SPORTIFY</span>
+        </div>
 
-  mobileToggle.addEventListener("click", () => {
-    mobileToggle.classList.toggle("active");
-    navMenu.classList.toggle("active");
-  });
-</script>
+        <!-- Mobile Menu Toggle -->
+        <div class="mobile-menu-toggle" id="mobileMenuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="sports.html" class="nav-link">Sports</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li><a href="teams.html" class="nav-link">Teams</a></li>
+          <li><a href="facilities.html" class="nav-link">Facilities</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="login.html" class="nav-link">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const mobileToggle = document.getElementById("mobileMenuToggle");
+        const navMenu = document.getElementById("navMenu");
+
+        mobileToggle.addEventListener("click", () => {
+          mobileToggle.classList.toggle("active");
+          navMenu.classList.toggle("active");
+        });
+      });
+    </script>
+
+  </body>
+
+</html>
