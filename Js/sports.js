@@ -1,7 +1,11 @@
 // Sports page category filtering
 document.addEventListener("DOMContentLoaded", () => {
-  const tabs = document.querySelectorAll(".category-tabs .learn-more-btn, .category-tabs .tab-btn");
-  const items = document.querySelectorAll(".sports-grid .sport-card, .sports-grid .sport-item");
+  const tabs = document.querySelectorAll(
+    ".category-tabs .learn-more-btn, .category-tabs .tab-btn"
+  );
+  const items = document.querySelectorAll(
+    ".sports-grid .sport-card, .sports-grid .sport-item"
+  );
 
   function setActiveTab(el) {
     tabs.forEach((t) => t.classList.remove("active"));
@@ -32,9 +36,17 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Default: show all
-  const defaultTab = document.querySelector(".category-tabs [data-category='all']");
+  const defaultTab = document.querySelector(
+    ".category-tabs [data-category='all']"
+  );
   if (defaultTab) {
     setActiveTab(defaultTab);
     filterCategory("all");
   }
 });
+
+fetch("footer.html")
+  .then((res) => res.text())
+  .then((data) => {
+    document.getElementById("footer").innerHTML = data;
+  });
