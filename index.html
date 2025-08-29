@@ -176,6 +176,17 @@
     <div id="footer"></div>
     <script src="Js/home.js"></script>
     <!-- <script src="Js/main.js"></script> -->
+    <script>
+      // Toggle mobile menu
+      const mobileToggle = document.getElementById("mobileMenuToggle");
+      const navMenu = document.getElementById("navMenu");
+
+      mobileToggle.addEventListener("click", () => {
+        mobileToggle.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+    </script>
+
   </body>
 
 </html>

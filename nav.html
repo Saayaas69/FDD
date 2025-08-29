@@ -27,3 +27,14 @@
     </ul>
   </div>
 </nav>
+
+<script>
+  // Toggle mobile menu
+  const mobileToggle = document.getElementById("mobileMenuToggle");
+  const navMenu = document.getElementById("navMenu");
+
+  mobileToggle.addEventListener("click", () => {
+    mobileToggle.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  });
+</script>
