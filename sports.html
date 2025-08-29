@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sportify - Where Champions Are Made</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="CSS/sports.css" />
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <div class="logo-icon"><img src="media/logo.png" alt="Sportify Logo"></div>
+          <span class="logo-text">SPORTIFY</span>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="mobile-menu-toggle" id="mobileMenuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="sports.html" class="nav-link">Sports</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li><a href="#navigation" class="nav-link">Teams</a></li>
+          <li><a href="facilities.html" class="nav-link">Facilities</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="login.html" class="nav-link">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- HERO (uses same hero styles/gradient/animation from styles.css) -->
+      <section class="hero" id="sports-hero">
+        <div class="hero-video">
+          <!-- optional background video -->
+          <div class="video-overlay"></div>
+        </div>
+
+        <div class="hero-content container animate-on-scroll" style="text-align:center;">
+          <h1 class="hero-title">
+            Sports Excellence <br>
+            <span class="highlight">Where Champions Are Made</span>
+          </h1>
+          <p class="hero-subtitle" style="margin-top:12px;">
+            Train harder. Compete smarter. Succeed together.
+          </p>
+          <div class="cta-buttons" style="margin-top:24px;">
+            <a href="login.html" class="cta-button primary">Join Now</a>
+            <a href="contact.html" class="cta-button secondary">Contact Us</a>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- Sports Categories -->
+      <section class="section featured-sports" id="programs" style="padding:80px 0;">
+        <div class="container">
+          <h2 class="section-title animate-on-scroll" style="color: white;">Our Sports Programs</h2>
+          <p class="section-subtitle animate-on-scroll" style="color: white;">
+            Explore team & individual sports, indoor & outdoor training programs.
+          </p>
+
+          <!-- Category buttons -->
+          <div class="category-tabs" style="margin-top:20px;">
+            <button class="learn-more-btn active" data-category="all">All</button>
+            <button class="learn-more-btn" data-category="team">Team</button>
+            <button class="learn-more-btn" data-category="individual">Individual</button>
+            <button class="learn-more-btn" data-category="indoor">Indoor</button>
+            <button class="learn-more-btn" data-category="outdoor">Outdoor</button>
+          </div>
+
+          <!-- Sports grid -->
+          <div class="sports-grid" style="margin-top:45px;">
+            <!-- Football (team, outdoor) -->
+            <div class="sport-card animate-on-scroll" data-category="team outdoor">
+              <div class="sport-icon">⚽</div>
+              <h3>Football</h3>
+              <p>
+                Competitive training sessions with tactical coaching and professional
+                drills. Training: Mon / Wed / Fri
+              </p>
+              <div style="display:flex;gap:10px;justify-content:center;margin-top:18px;">
+                <button class="learn-more-btn">Details</button>
+                <a class="learn-more-btn" href="login.html"
+                  style="background:transparent;border:2px solid var(--accent-color);color:var(--accent-color);">Join
+                  Team</a>
+              </div>
+            </div>
+
+            <!-- Basketball (team, indoor) -->
+            <div class="sport-card animate-on-scroll" data-category="team indoor">
+              <div class="sport-icon">🏀</div>
+              <h3>Basketball</h3>
+              <p>
+                High-intensity court sessions focused on conditioning, teamwork and
+                game situations. Training: Tue / Thu
+              </p>
+              <div style="display:flex;gap:10px;justify-content:center;margin-top:18px;">
+                <button class="learn-more-btn">Details</button>
+                <a class="learn-more-btn" href="login.html"
+                  style="background:transparent;border:2px solid var(--accent-color);color:var(--accent-color);">Join
+                  Team</a>
+              </div>
+            </div>
+
+            <!-- Tennis (individual, outdoor) -->
+            <div class="sport-card animate-on-scroll" data-category="individual outdoor">
+              <div class="sport-icon">🎾</div>
+              <h3>Tennis</h3>
+              <p>
+                Individual skill-building with match-play practice and pro coaching.
+                Training: Tue / Thu / Sat
+              </p>
+              <div style="display:flex;gap:10px;justify-content:center;margin-top:18px;">
+                <button class="learn-more-btn">Details</button>
+                <a class="learn-more-btn" href="login.html"
+                  style="background:transparent;border:2px solid var(--accent-color);color:var(--accent-color);">Join
+                  Team</a>
+              </div>
+            </div>
+
+            <!-- Swimming (individual, indoor) -->
+            <div class="sport-card animate-on-scroll" data-category="individual indoor">
+              <div class="sport-icon">🏊</div>
+              <h3>Swimming</h3>
+              <p>
+                Technique-focused swim training in our Olympic-standard pool.
+                Swimming squads for all levels. Training: Daily sessions
+              </p>
+              <div style="display:flex;gap:10px;justify-content:center;margin-top:18px;">
+                <button class="learn-more-btn">Details</button>
+                <a class="learn-more-btn" href="login.html"
+                  style="background:transparent;border:2px solid var(--accent-color);color:var(--accent-color);">Join
+                  Team</a>
+              </div>
+            </div>
+
+            <!-- Badminton (individual, indoor) -->
+            <div class="sport-card animate-on-scroll" data-category="individual indoor">
+              <div class="sport-icon">🏸</div>
+              <h3>Badminton</h3>
+              <p>
+                Fast footwork, precision shots and competitive drills on indoor
+                courts. Training: Tue / Thu / Sun
+              </p>
+              <div style="display:flex;gap:10px;justify-content:center;margin-top:18px;">
+                <button class="learn-more-btn">Details</button>
+                <a class="learn-more-btn" href="login.html"
+                  style="background:transparent;border:2px solid var(--accent-color);color:var(--accent-color);">Join
+                  Team</a>
+              </div>
+            </div>
+
+            <!-- Cricket (team, outdoor) -->
+            <div class="sport-card animate-on-scroll" data-category="team outdoor">
+              <div class="sport-icon">🏏</div>
+              <h3>Cricket</h3>
+              <p>
+                Batting, bowling and fielding programs with match simulations and
+                league play. Training: Wed / Sat / Sun
+              </p>
+              <div style="display:flex;gap:10px;justify-content:center;margin-top:18px;">
+                <button class="learn-more-btn">Details</button>
+                <a class="learn-more-btn" href="login.html"
+                  style="background:transparent;border:2px solid var(--accent-color);color:var(--accent-color);">Join
+                  Team</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <!-- Featured Programs (uses same card look used across site) -->
+    <section class="section teams-section" style="padding:80px 0;">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Elite Training Programs</h2>
+        <p style="color: white;" class="section-subtitle animate-on-scroll">Personalized performance plans, recovery,
+          and mental conditioning.
+        </p>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-top:40px;">
+          <div class="sport-card animate-on-scroll">
+            <div class="sport-icon">🏋️‍♂️</div>
+            <h3>High Performance</h3>
+            <p>Strength & conditioning tailored for competitive athletes with performance monitoring
+              and nutrition.</p>
+            <a class="learn-more-btn" href="login.html" style="margin-top:12px;">Learn More</a>
+          </div>
+
+          <div class="sport-card animate-on-scroll">
+            <div class="sport-icon">⚡</div>
+            <h3>Speed & Agility</h3>
+            <p>Short-burst training, acceleration drills and reaction programming to increase
+              on-field explosiveness.
+            </p>
+            <a class=" learn-more-btn" href="login.html" style="margin-top:12px;">Learn More</a>
+          </div>
+
+          <div class="sport-card animate-on-scroll">
+            <div class="sport-icon">🧠</div>
+            <h3>Mental Conditioning</h3>
+            <p>Focus routines, competition psychology and stress management for peak performance under pressure.</p>
+            <a class="learn-more-btn" href="login.html" style="margin-top:12px;">Learn More</a>
+          </div>
+
+          <div class="sport-card animate-on-scroll">
+            <div class="sport-icon">💤</div>
+            <h3>Recovery & Wellness</h3>
+            <p>Injury prevention, sports massage and recovery protocols to keep athletes in top form.</p>
+            <a class="learn-more-btn" href="login.html" style="margin-top:12px;">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="section featured-sports" style="padding:80px 0;">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll" style="color: white;">Success Stories</h2>
+        <p class="section-subtitle animate-on-scroll" style="color: white;">Meet some of our champion athletes.</p>
+
+        <div class="stories-grid" style="margin-top:40px;">
+          <!-- Story 1 -->
+          <div class="story-card animate-on-scroll">
+            <div class="story-image">
+              <img src="/media/fplayer1.jpg" alt="Sarah Johnson">
+            </div>
+            <h3>Lionel Messi</h3>
+            <span class="sport-type">Football — Worldcup 2022 winner</span>
+            <p>"The program transformed me into a national champion. Coaches are world-class."</p>
+          </div>
+
+          <!-- Story 2 -->
+          <div class="story-card animate-on-scroll">
+            <div class="story-image">
+              <img src="/media/fplayer2.jpg" alt="Michael Chang">
+            </div>
+            <h3>Cristaino Ronaldo</h3>
+            <span class="sport-type">Football — worldcup 2026 winner</span>
+            <p>"From sporting to madrid — the leadership training was invaluable."</p>
+          </div>
+
+          <!-- Story 3 -->
+          <div class="story-card animate-on-scroll">
+            <div class="story-image">
+              <img src="media/fplayer3.jpg" alt="Emma Wilson">
+            </div>
+            <h3>Lord Dipankar Shrestha</h3>
+            <span class="sport-type">Basketball — International Champion</span>
+            <p>"Elite training and facilities helped me become a pro player."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Join CTA -->
+    <section class="section" style="padding:60px 0 120px;">
+      <div class="container">
+        <div
+          style="background:linear-gradient(135deg, rgba(42, 137, 126, 0.518), rgba(181, 97, 37, 0.249));padding:36px;border-radius:16px;text-align:center;">
+          <h2 class="animate-on-scroll">Begin Your Journey to Excellence</h2>
+          <p class="animate-on-scroll" style="color:var(--black);margin-top:8px;">Sign up for trials, memberships,
+            or drop by to see the facilities.</p>
+          <div class="cta-buttons" style="margin-top:18px;">
+            <a class="cta-button" href="login.html">Join Now</a>
+            <a class="learn-more-btn" href="contact.html">Contact Us</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <div id="footer"></div>
+
+    <!-- reuse your existing index.js (mobile menu, intersection observer animations etc.) -->
+    <script src="Js/home.js"></script>
+    <script src="Js/sports.js"></script>
+  </body>
+
+</html>

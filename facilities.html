@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facilities · Sportify</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="CSS/facilities.css">
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <div class="logo-icon"><img src="media/logo.png" alt="Sportify Logo"></div>
+          <span class="logo-text">SPORTIFY</span>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="mobile-menu-toggle" id="mobileMenuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="sports.html" class="nav-link">Sports</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li><a href="#navigation" class="nav-link">Teams</a></li>
+          <li><a href="facilities.html" class="nav-link">Facilities</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="login.html" class="nav-link">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="facilities-page">
+      <!-- HERO SECTION -->
+      <section class="hero-section">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+          <h1 class="animate-fade-in-up">
+            Our <span style="color: #ff7a18;">Facilities</span>
+          </h1>
+          <p class="animate-fade-in-up">Strength. Spirit. Success.</p>
+
+          <div class="hero-cta animate-fade-in-up">
+            <button class="btn btn--primary book-now-btn">
+              <i class="fas fa-calendar-check"></i> Book a Slot
+            </button>
+            <a href="#overview" class="btn btn--ghost">
+              Explore Facilities
+            </a>
+          </div>
+
+          <ul class="hero-badges animate-fade-in-up">
+            <li><i class="fas fa-trophy"></i> Competition Ready</li>
+            <li><i class="fas fa-shield-alt"></i> 24/7 Security</li>
+            <li><i class="fas fa-bolt"></i> Pro Equipment</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- FACILITIES OVERVIEW -->
+      <section id="overview" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">World Class</span>
+            <h2 class="section-title">Featured Facilities</h2>
+            <p class="section-description">
+              State-of-the-art facilities designed for champions, built for excellence.
+            </p>
+          </div>
+
+          <div class="facilities-grid">
+            <article class="facility-card" data-facility="gym" tabindex="0">
+              <div class="facility-image">
+                <img
+                  src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                  alt="Modern Gym" loading="lazy">
+                <div class="facility-chip">
+                  <i class="fas fa-dumbbell"></i> Strength
+                </div>
+                <div class="facility-overlay">
+                  <span class="view-details">View Details</span>
+                </div>
+              </div>
+              <div class="facility-info">
+                <h3>Modern Gym</h3>
+                <p>State-of-the-art equipment & training areas</p>
+                <div class="facility-meta">
+                  <span><i class="far fa-clock"></i> 6:00–22:00</span>
+                  <span><i class="fas fa-users"></i> 100 cap</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="facility-card" data-facility="pool" tabindex="0">
+              <div class="facility-image">
+                <img
+                  src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                  alt="Olympic Pool" loading="lazy">
+                <div class="facility-chip">
+                  <i class="fas fa-swimming-pool"></i> Aquatics
+                </div>
+                <div class="facility-overlay">
+                  <span class="view-details">View Details</span>
+                </div>
+              </div>
+              <div class="facility-info">
+                <h3>Olympic Pool</h3>
+                <p>50m pool with pro diving boards</p>
+                <div class="facility-meta">
+                  <span><i class="far fa-clock"></i> 7:00–21:00</span>
+                  <span><i class="fas fa-swimmer"></i> 60 cap</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="facility-card" data-facility="courts" tabindex="0">
+              <div class="facility-image">
+                <img
+                  src="https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                  alt="Indoor Courts" loading="lazy">
+                <div class="facility-chip">
+                  <i class="fas fa-basketball-ball"></i> Multi-court
+                </div>
+                <div class="facility-overlay">
+                  <span class="view-details">View Details</span>
+                </div>
+              </div>
+              <div class="facility-info">
+                <h3>Indoor Courts</h3>
+                <p>Basketball · Volleyball · Badminton</p>
+                <div class="facility-meta">
+                  <span><i class="far fa-clock"></i> 8:00–22:00</span>
+                  <span><i class="fas fa-users"></i> 200 cap</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="facility-card" data-facility="field" tabindex="0">
+              <div class="facility-image">
+                <img
+                  src="https://images.unsplash.com/photo-1459865264687-595d652de67e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                  alt="Sports Field" loading="lazy">
+                <div class="facility-chip">
+                  <i class="fas fa-futbol"></i> Outdoor
+                </div>
+                <div class="facility-overlay">
+                  <span class="view-details">View Details</span>
+                </div>
+              </div>
+              <div class="facility-info">
+                <h3>Sports Field</h3>
+                <p>FIFA pitch & 400m athletics track</p>
+                <div class="facility-meta">
+                  <span><i class="far fa-clock"></i> 6:00–21:00</span>
+                  <span><i class="fas fa-people-group"></i> 500 cap</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURES SECTION -->
+      <section class="section features-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Why Choose Our Facilities</h2>
+            <p class="section-description">
+              Experience excellence with our world-class amenities and professional services.
+            </p>
+          </div>
+
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-cogs"></i>
+              </div>
+              <h3>Modern Equipment</h3>
+              <p>Latest machines, timing & analytics for optimal performance</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-user-tie"></i>
+              </div>
+              <h3>Professional Staff</h3>
+              <p>Licensed coaches & certified lifeguards at your service</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-medal"></i>
+              </div>
+              <h3>Competition Ready</h3>
+              <p>Facilities that meet international competition standards</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3>Secure Access</h3>
+              <p>24/7 monitored entry system and secure storage</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BOOKING SECTION -->
+      <section class="section booking-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title" style="color: white;">Easy Facility Booking</h2>
+            <p class="section-description" style="color: rgba(255, 255, 255, 0.8);">
+              Book your preferred facility in just a few simple steps.
+            </p>
+          </div>
+
+          <div class="booking-content">
+            <div class="booking-info">
+              <ol class="booking-steps">
+                <li>
+                  <span class="step-number">1</span>
+                  <span>Choose your facility</span>
+                </li>
+                <li>
+                  <span class="step-number">2</span>
+                  <span>Select date & time</span>
+                </li>
+                <li>
+                  <span class="step-number">3</span>
+                  <span>Set duration & review price</span>
+                </li>
+                <li>
+                  <span class="step-number">4</span>
+                  <span>Confirm your booking</span>
+                </li>
+              </ol>
+              <button class="btn btn--primary book-now-btn mt-4">
+                <i class="fas fa-calendar-check"></i> Start Booking
+              </button>
+            </div>
+
+            <div class="booking-preview">
+              <h3>Booking Summary</h3>
+              <p style="opacity: 0.7; margin-bottom: 1rem;">Select options to see pricing details</p>
+              <ul class="summary-list">
+                <li><span>Facility</span><strong id="sumFacility">—</strong></li>
+                <li><span>Date</span><strong id="sumDate">—</strong></li>
+                <li><span>Time</span><strong id="sumTime">—</strong></li>
+                <li><span>Duration</span><strong id="sumDuration">—</strong></li>
+                <li><span>Total Price</span><strong id="sumPrice">—</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- FACILITY DETAILS MODAL -->
+    <div class="facility-modal modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close-modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="facility-details">
+            <!-- Content populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOOKING MODAL -->
+    <div class="booking-modal modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Book a Facility</h2>
+          <button class="close-modal">&times;</button>
+        </div>
+        <!-- BOOKING MODAL (completed) -->
+        <div class="booking-modal modal" id="bookingModal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2>Book a Facility</h2>
+              <button class="close-modal" aria-label="Close">&times;</button>
+            </div>
+
+            <div class="modal-body">
+              <form id="bookingForm" class="booking-form" novalidate>
+                <!-- Step 1: Facility Selection -->
+                <div class="form-step active" data-step="1">
+                  <div class="step-header">
+                    <h3>Choose Your Facility</h3>
+                    <p>Select from our world-class facilities</p>
+                  </div>
+
+                  <div class="facility-options">
+                    <div class="facility-option" data-facility="gym" tabindex="0">
+                      <div class="facility-option-content">
+                        <div class="facility-icon"><i class="fas fa-dumbbell"></i></div>
+                        <div class="facility-info">
+                          <h4>Modern Gym</h4>
+                          <p>State-of-the-art gym with professional equipment</p>
+                          <div class="facility-meta">
+                            <span class="price">NPR 1200/hour</span>
+                            <span class="capacity">100 capacity</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="facility-option" data-facility="pool" tabindex="0">
+                      <div class="facility-option-content">
+                        <div class="facility-icon"><i class="fas fa-swimmer"></i></div>
+                        <div class="facility-info">
+                          <h4>Olympic Pool</h4>
+                          <p>50m Olympic pool with diving facilities</p>
+                          <div class="facility-meta">
+                            <span class="price">NPR 1500/hour</span>
+                            <span class="capacity">60 capacity</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="facility-option" data-facility="courts" tabindex="0">
+                      <div class="facility-option-content">
+                        <div class="facility-icon"><i class="fas fa-basketball-ball"></i></div>
+                        <div class="facility-info">
+                          <h4>Indoor Courts</h4>
+                          <p>Basketball · Volleyball · Badminton</p>
+                          <div class="facility-meta">
+                            <span class="price">NPR 1000/hour</span>
+                            <span class="capacity">200 capacity</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="facility-option" data-facility="field" tabindex="0">
+                      <div class="facility-option-content">
+                        <div class="facility-icon"><i class="fas fa-futbol"></i></div>
+                        <div class="facility-info">
+                          <h4>Sports Field</h4>
+                          <p>FIFA standard field with athletics track</p>
+                          <div class="facility-meta">
+                            <span class="price">NPR 1800/hour</span>
+                            <span class="capacity">500 capacity</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Step 2: Date & Time -->
+                <div class="form-step" data-step="2">
+                  <div class="step-header">
+                    <h3>Select Date & Time</h3>
+                    <p>Choose your preferred booking slot</p>
+                  </div>
+
+                  <div class="datetime-selection">
+                    <div class="form-row">
+                      <div class="form-group">
+                        <label for="bookingDate"><i class="fas fa-calendar-alt"></i> Date</label>
+                        <input type="date" id="bookingDate" name="date" required>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="bookingTime"><i class="fas fa-clock"></i> Time</label>
+                        <select id="bookingTime" name="time" required>
+                          <option value="">Select time</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label><i class="fas fa-hourglass-half"></i> Duration</label>
+                      <div class="duration-options">
+                        <button type="button" class="duration-btn" data-duration="1">1 Hour</button>
+                        <button type="button" class="duration-btn" data-duration="2">2 Hours</button>
+                        <button type="button" class="duration-btn" data-duration="3">3 Hours</button>
+                        <button type="button" class="duration-btn" data-duration="4">4 Hours</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Step 3: Confirmation -->
+                <div class="form-step" data-step="3">
+                  <div class="step-header">
+                    <h3>Booking Summary</h3>
+                    <p>Review your booking details</p>
+                  </div>
+
+                  <div class="booking-summary">
+                    <div class="summary-card">
+                      <div class="summary-item">
+                        <span class="label">Facility</span>
+                        <span class="value" id="summaryFacility">-</span>
+                      </div>
+                      <div class="summary-item">
+                        <span class="label">Date</span>
+                        <span class="value" id="summaryDate">-</span>
+                      </div>
+                      <div class="summary-item">
+                        <span class="label">Time</span>
+                        <span class="value" id="summaryTime">-</span>
+                      </div>
+                      <div class="summary-item">
+                        <span class="label">Duration</span>
+                        <span class="value" id="summaryDuration">-</span>
+                      </div>
+                      <div class="summary-item total">
+                        <span class="label">Total Amount</span>
+                        <span class="value" id="summaryTotal">NPR 0</span>
+                      </div>
+                    </div>
+
+                    <div class="customer-info">
+                      <h4><i class="fas fa-user"></i> Contact Information</h4>
+                      <div class="form-row">
+                        <div class="form-group">
+                          <label for="customerName">Full Name</label>
+                          <input type="text" id="customerName" name="name" required placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                          <label for="customerEmail">Email</label>
+                          <input type="email" id="customerEmail" name="email" required placeholder="your@email.com">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="customerPhone">Phone Number</label>
+                        <input type="tel" id="customerPhone" name="phone" required placeholder="+977 98XXXXXXXX">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="form-navigation">
+                  <button type="button" class="btn btn--secondary prev-btn" style="display: none;">
+                    <i class="fas fa-arrow-left"></i> Previous
+                  </button>
+
+                  <div style="display: flex; gap: 1rem;">
+                    <button type="button" class="btn btn--secondary cancel-btn">
+                      <i class="fas fa-times"></i> Cancel
+                    </button>
+
+                    <button type="button" class="btn btn--primary next-btn">
+                      Next <i class="fas fa-arrow-right"></i>
+                    </button>
+
+                    <button type="submit" class="btn btn--primary submit-btn" style="display: none;">
+                      <i class="fas fa-check"></i> Confirm Booking
+                    </button>
+                  </div>
+                </div>
+              </form>
+
+              <!-- Progress Bar -->
+              <div class="progress-bar" aria-hidden="true" style="margin-top: 1rem;">
+                <div class="progress-fill" style="width: 33.33%;"></div>
+                <div class="progress-steps">
+                  <div class="progress-step active" data-step="1">1</div>
+                  <div class="progress-step" data-step="2">2</div>
+                  <div class="progress-step" data-step="3">3</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="footer"></div>
+        </div>
+        <div id="footer"></div>
+        <script src="Js/home.js"></script>
+  </body>
+
+</html>

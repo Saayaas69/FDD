@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams - Sportify</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/teams.css">
+  </head>
+
+  <body>
+    <!-- Navigation will be loaded here -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <div class="logo-icon"><img src="media/logo.png" alt="Sportify Logo"></div>
+          <span class="logo-text">SPORTIFY</span>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="mobile-menu-toggle" id="mobileMenuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="sports.html" class="nav-link">Sports</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li><a href="teams.html" class="nav-link">Teams</a></li>
+          <li><a href="facilities.html" class="nav-link">Facilities</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Teams Hero Section -->
+    <section class="teams-hero">
+      <div class="container">
+        <h1>Our Teams</h1>
+        <p>Meet our championship-winning university sports teams</p>
+      </div>
+    </section>
+
+    <!-- Teams Grid Section -->
+    <section class="teams-section">
+      <div class="container">
+        <div class="teams-grid">
+          <!-- Football Team -->
+          <div class="team-card" data-team="football">
+            <div class="team-image">
+              <img src="https://m.media-amazon.com/images/I/81Rxne5Cv2L.jpg" alt="University Football Team">
+              <div class="team-overlay">
+                <div class="team-sport-icon">⚽</div>
+              </div>
+            </div>
+            <div class="team-content">
+              <h3>University Football Team</h3>
+              <p class="team-division">Division A</p>
+              <div class="team-stats">
+                <div class="stat-item">
+                  <span class="stat-number">2nd</span>
+                  <span class="stat-label">League Position</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">45</span>
+                  <span class="stat-label">Goals Scored</span>
+                </div>
+              </div>
+              <button class="view-details-btn" data-team="football">View Team Details</button>
+            </div>
+          </div>
+
+          <!-- Basketball Team -->
+          <div class="team-card" data-team="basketball">
+            <div class="team-image">
+              <img src="https://www.freevector.com/uploads/vector/preview/19067/047.jpg"
+                alt="University Basketball Team">
+              <div class="team-overlay">
+                <div class="team-sport-icon">🏀</div>
+              </div>
+            </div>
+            <div class="team-content">
+              <h3>University Basketball Team</h3>
+              <p class="team-division">Division A</p>
+              <div class="team-stats">
+                <div class="stat-item">
+                  <span class="stat-number">1st</span>
+                  <span class="stat-label">League Position</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">890</span>
+                  <span class="stat-label">Points Scored</span>
+                </div>
+              </div>
+              <button class="view-details-btn" data-team="basketball">View Team Details</button>
+            </div>
+          </div>
+
+          <!-- Swimming Team -->
+          <div class="team-card" data-team="swimming">
+            <div class="team-image">
+              <img
+                src="https://i0.wp.com/blog.myswimpro.com/wp-content/uploads/2022/12/freestyle-swimming-stroke-myswimpro-taylor.jpg?fit=2000%2C1500&ssl=1"
+                alt="University Swimming Team">
+              <div class="team-overlay">
+                <div class="team-sport-icon">🏊</div>
+              </div>
+            </div>
+            <div class="team-content">
+              <h3>University Swimming Team</h3>
+              <p class="team-division">Division A</p>
+              <div class="team-stats">
+                <div class="stat-item">
+                  <span class="stat-number">1st</span>
+                  <span class="stat-label">Overall Ranking</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">15</span>
+                  <span class="stat-label">Total Medals</span>
+                </div>
+              </div>
+              <button class="view-details-btn" data-team="swimming">View Team Details</button>
+            </div>
+          </div>
+
+          <!-- Badminton Team -->
+          <div class="team-card" data-team="badminton">
+            <div class="team-image">
+              <img src="https://source.ichongqing.info/2025/0720390b3db97275498a0a7cd18e6d11781752228649.png"
+                alt="University Badminton Team">
+              <div class="team-overlay">
+                <div class="team-sport-icon">🏸</div>
+              </div>
+            </div>
+            <div class="team-content">
+              <h3>University Badminton Team</h3>
+              <p class="team-division">Division A</p>
+              <div class="team-stats">
+                <div class="stat-item">
+                  <span class="stat-number">3rd</span>
+                  <span class="stat-label">League Position</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">32</span>
+                  <span class="stat-label">Matches Won</span>
+                </div>
+              </div>
+              <button class="view-details-btn" data-team="badminton">View Team Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Details Modal -->
+    <div class="team-modal" id="teamModal">
+      <div class="modal-backdrop"></div>
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose">&times;</button>
+        <div class="modal-header">
+          <img id="modalTeamImage" src="" alt="">
+          <div class="modal-team-info">
+            <h2 id="modalTeamName"></h2>
+            <p id="modalTeamOverview"></p>
+          </div>
+        </div>
+
+        <div class="modal-body">
+          <div class="achievements-section">
+            <h3>Recent Achievements</h3>
+            <div class="achievements-list" id="achievementsList">
+              <!-- Achievements will be populated by JavaScript -->
+            </div>
+          </div>
+
+          <div class="matches-section">
+            <h3>Upcoming Matches</h3>
+            <div class="matches-table">
+              <div class="table-header">
+                <span>Date</span>
+                <span>Opponent</span>
+                <span>Venue</span>
+              </div>
+              <div class="table-body" id="matchesList">
+                <!-- Matches will be populated by JavaScript -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="Js/main.js"></script>
+    <script src="Js/teams.js"></script>
+  </body>
+
+</html>
