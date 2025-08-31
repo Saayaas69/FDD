@@ -26,14 +26,12 @@ function goBack() {
 // Handle form submissions and redirect to home page
 document.getElementById("loginForm").addEventListener("submit", function (e) {
   e.preventDefault();
-  // In a real app, you would validate credentials here
-  // For now, just redirect to home page
+
   window.location.href = "index.html";
 });
 
 document.getElementById("signupForm").addEventListener("submit", function (e) {
   e.preventDefault();
-  // In a real app, you would create the account here
-  // For now, just redirect to home page
+
   window.location.href = "index.html";
 });
